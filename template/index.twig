@@ -1,0 +1,19 @@
+{% extends 'layout.twig' %}
+
+{% block meta %}
+	<script src="/js/index.js"></script>
+{% endblock %}
+
+{% block content %}
+	<div id="banner_wrap">
+		<div id="banner"></div>
+	</div>
+	
+	<div class="row">
+		<div class="twelve columns">
+			<div id="content">
+				{{ page.content }}
+			</div>
+		</div>
+	</div>
+{% endblock %}

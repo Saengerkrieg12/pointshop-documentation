@@ -1,0 +1,1 @@
+<p class="lead">Items in PointShop are very configurable and provide numerous ways of creating something unique. Below are listed the properties and functions available in items. Some are required, whilst others are optional.</p>

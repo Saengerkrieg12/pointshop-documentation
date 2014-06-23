@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ page.title }} | {{ config.title }}</title>
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css" />
+		<link rel="stylesheet" href="/css/grid.css" />
+		<link rel="stylesheet" href="/css/buttons.css" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.1/modernizr.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+		{% block meta %}{% endblock %}
+	</head>
+	<body class="{{ page.uri == '/' ? 'index' : page.uri }}">
+		<header>
+			<div class="row">
+				<div class="six columns" id="branding">
+					<a href="/">{{ config.title }}</a>
+				</div>
+				<div class="six columns" id="tagline">
+					<a href="/">{{ config.tagline }}</a>
+				</div>
+			</div>
+		</header>
+		{% block content %}{% endblock %}
+		<footer>
+			<div class="row">
+				<div class="six columns">
+					<ul id="links">
+						
+					</ul>
+					
+					&copy; Adam Burton {{ 'now'|date('Y') }}
+				</div>
+				<div class="six columns">
+					
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
