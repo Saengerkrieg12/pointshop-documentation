@@ -2,12 +2,12 @@
 <html>
 	<head>
 		<title>{{ page.title }} | {{ config.title }}</title>
-		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css" />
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.2/normalize.css" />
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="/css/grid.css" />
 		<link rel="stylesheet" href="/css/elements.css" />
 		<link rel="stylesheet" href="/css/buttons.css" />
 		<link rel="stylesheet" href="/css/style.css" />
-		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.1/modernizr.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
 		{% block meta %}{% endblock %}
@@ -26,11 +26,8 @@
 		{% block content %}{% endblock %}
 		<footer>
 			<div class="row">
-				<div class="six columns">
+				<div class="twelve columns">
 					&copy; Adam Burton {{ 'now'|date('Y') }}
-				</div>
-				<div class="six columns">
-					
 				</div>
 			</div>
 		</footer>

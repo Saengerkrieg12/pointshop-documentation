@@ -2,7 +2,7 @@
 
 ####<a name="meta-addtrail"></a>Player:PS_AddTrail(ITEM, name, color)
 
-**Arguments:** ITEM [<span class="type">Table</span> - valid ITEM], name [<span class="type">String</span> - key from ClientsideModels table in ITEM], color [Color]  
+**Arguments:** ITEM [<span class="type">Table</span> valid ITEM], name [<span class="type">String</span> key from ClientsideModels table in ITEM], color [Color]  
 **Realm:** <span class="server">Server</span>  
 **Description:** Adds a trail to the player.
 
@@ -10,7 +10,7 @@
 
 ####<a name="meta-removetrail"></a>Player:PS_RemoveTrail(ITEM, name)
 
-**Arguments:** ITEM [<span class="type">Table</span> - valid ITEM], name [<span class="type">String</span> - key from ClientsideModels table in ITEM]  
+**Arguments:** ITEM [<span class="type">Table</span> valid ITEM], name [<span class="type">String</span> key from ClientsideModels table in ITEM]  
 **Realm:** <span class="server">Server</span>  
 **Description:** Removes a trail from the player.
 

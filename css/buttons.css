@@ -23,6 +23,7 @@ a.button, a.button:visited {
 	-o-transition: background .1s ease-in-out;
 	transition: background .1s ease-in-out;
 	text-decoration: none;
+	margin: 0 4px;
 }
 
 .button:hover,
@@ -52,6 +53,7 @@ a.button:active, a.button:focus {
 
 .button i {
 	line-height: 16px;
+	margin-left: 10px;
 }
 
 .button.button-small,
@@ -69,6 +71,7 @@ a.button.button-small {
 a.button.button-large {
 	padding: 20px;
 	font-size: 24px;
+	margin: 0 6px;
 }
 
 .button.button-large i {

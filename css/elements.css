@@ -87,8 +87,12 @@ pre {
 	margin: 0 0 60px 0;
 }
 
-code {
+pre code {
 	display: block;
 	background: #E4E4E4;
 	padding: 15px;
+}
+
+code {
+	
 }
