@@ -3,12 +3,18 @@
 	<head>
 		<title>{{ page.title }} | {{ config.meta_title }}</title>
 		
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="apple-mobile-web-app-title" content="{{ config.title }}" />
+		
 		{% if config.meta_keywords %}
 			<meta name="keywords" content="{{ config.meta_keywords }}" />
 		{% endif %}
 		{% if config.meta_description %}
 			<meta name="keywords" content="{{ config.meta_description }}" />
 		{% endif %}
+		
+		<link rel="canonical" href="http://{{ config.domain }}" />
 		
 		<link type="image/x-icon" rel="shortcut icon" href="/favicon.ico" />
 		<link type="image/x-icon" rel="icon" href="/favicon.ico" />
