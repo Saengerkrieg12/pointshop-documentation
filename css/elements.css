@@ -10,7 +10,7 @@
 body {
 	background: #FFF;
 	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	color: #444;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-size-adjust: 100%;
@@ -54,7 +54,7 @@ h6 {
 
 p {
 	margin: 0 0 20px 0;
-	line-height: 22px;
+	line-height: 24px;
 }
 
 p.lead {
@@ -91,10 +91,12 @@ pre code {
 	display: block;
 	background: #E4E4E4;
 	padding: 15px;
+	line-height: inherit;
 }
 
 code {
 	background: #ECECEC;
 	display: inline-block;
 	padding: 0 5px;
+	line-height: 20px;
 }

@@ -12,7 +12,7 @@
 
 **Required:** Yes  
 **Type:** <span class="type">Number</span>  
-**Description:** How much should this item cost to buy?
+**Description:** How much should the item cost to buy?
 
     ITEM.Price = 200
 
@@ -20,7 +20,7 @@
 
 **Required:** No, unless ITEM.Material is not defined  
 **Type:** <span class="type">String</span>  
-**Description:** The model shown in the shop gui. Either `ITEM.Model` or `ITEM.Material` is required.
+**Description:** The model shown in the PointShop menu. Either `ITEM.Model` or `ITEM.Material` is required.
 
     ITEM.Model = 'models/player/kleiner.mdl'
 
@@ -28,7 +28,7 @@
 
 **Required:** No, unless ITEM.Model is not defined  
 **Type:** <span class="type">String</span>  
-**Description:** The material shown in the shop gui. Either `ITEM.Model` or `ITEM.Material` is required.
+**Description:** The material shown in the PointShop menu. Either `ITEM.Model` or `ITEM.Material` is required.
 
     ITEM.Material = 'trails/electric.vmt'
 
@@ -36,7 +36,7 @@
 
 **Required:** No  
 **Type:** <span class="type">Number</span>  
-**Description:** Sets the skin of the model shown in the shop gui.
+**Description:** Sets the skin of the model shown in the PointShop menu.
 
     ITEM.Skin = 1
 
@@ -44,7 +44,7 @@
 
 **Required:** No  
 **Type:** <span class="type">Table</span>  
-**Description:** Defines the member groups who's members can buy this item.
+**Description:** Defines the groups who's members can buy the item.
 
     ITEM.AllowedUserGroups = { "admin", "vip" }
 
@@ -52,7 +52,7 @@
 
 **Required:** No  
 **Type:** <span class="type">Boolean</span>  
-**Description:** Defines if the item should be given to the player but not kept. Good for weapons.
+**Description:** Defines if the item should be given to the player only once and not kept. Useful for purchasing weapons weapons. This will call `ITEM:OnBuy()` but not `ITEM:OnEquip()`.
 
     ITEM.SingleUse = true
 
@@ -60,7 +60,7 @@
 
 **Required:** No  
 **Type:** <span class="type">String</span>  
-**Description:** Attaches the clientside model to this attachment on the player if this item is added as a hat.
+**Description:** Defines which model attachment to use for clientside model positioning.
 
     ITEM.Attachment = 'eyes'
 
@@ -68,14 +68,22 @@
 
 **Required:** No  
 **Type:** <span class="type">String</span>  
-**Description:** Attaches the clientside model to this bone on the player if this item is added as a hat.
+**Description:** Defines which model bone to use for clientside model positioning.
 
     ITEM.Bone = 'ValveBiped.Bip01_Head1'
 
-####<a name="nopreview"></a>ITEM.NoPreview
+####<a name="no-preview"></a>ITEM.NoPreview
 
 **Required:** No  
 **Type:** <span class="type">Boolean</span>
-**Description:** Enables or disables previews for an item.
+**Description:** Enables or disables previews for the item.
 
     ITEM.NoPreview = true
+
+####<a name="admin-only"></a>ITEM.AdminOnly
+
+**Required:** No  
+**Type:** <span class="type">Boolean</span>
+**Description:** Sets whether the item should only be purchasable by admins.
+
+    ITEM.AdminOnly = true

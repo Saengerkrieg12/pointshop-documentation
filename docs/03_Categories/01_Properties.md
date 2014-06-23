@@ -31,3 +31,11 @@
 **Description:** Defines the member groups who can see and buy items from this category.
 
     CATEGORY.AllowedUserGroups = { "admin", "vip" }
+
+####<a name="order"></a>CATEGORY.Order
+
+**Required:** No  
+**Type:** <span class="type">Number</span>  
+**Description:** Sets the display order for category tabs in the PointShop menu.
+
+    CATEGORY.Order = 6

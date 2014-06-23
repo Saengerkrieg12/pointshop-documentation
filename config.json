@@ -7,5 +7,6 @@
 	"index_title": "Home",
 	"tagline": "The most popular shop system for Garry's Mod",
 	"docs_path": "./docs/",
-	"analytics_code": "UA-23198406-13"
+	"analytics_code": "UA-23198406-13",
+	"disqus_shortname": "pointshopdocs"
 }

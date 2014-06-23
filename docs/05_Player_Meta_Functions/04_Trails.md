@@ -1,5 +1,7 @@
 <p class="lead">Helpful clientside model-related functions.</p>
 
+<p class="error"><i class="fa fa-exclamation-circle"></i> These functions do not exist in the current version of PointShop and will be added in a future release.</p>
+
 ####<a name="add-trail"></a>Player:PS_AddTrail(ITEM, name, color)
 
 **Arguments:** <span class="type">Table</span> ITEM, <span class="type">String</span> name, <span class="type">Color</span> color  

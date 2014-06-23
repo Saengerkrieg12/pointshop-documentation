@@ -7,11 +7,10 @@
 
     local can_buy_item = ply:PS_CanPerformAction()
 
-####<a name="toggle-menu"></a>Player:PS_ToggleMenu(open)
+####<a name="toggle-menu"></a>Player:PS_ToggleMenu()
 
-**Arguments:** <span class="type">Boolean</span> open  
 **Realm:** <span class="server">Server</span>  
-**Description:** Toggles the PointShop menu for the player, or forces using the argument
+**Description:** Toggles the PointShop menu for the player.
 
     ply:PS_ToggleMenu()
 
@@ -29,10 +28,3 @@
 **Description:** Returns the players user group, with support for admin mods.
 
     local usergroup = ply:PS_GetUsergroup()
-
-####<a name="can-manage-pointshop"></a>Player:PS_CanManagePointShop()
-
-**Realm:** <span class="server">Shared</span>  
-**Description:** Returns whether the player can manage PointShop.
-
-    local can_manage = ply:PS_CanManagePointShop()

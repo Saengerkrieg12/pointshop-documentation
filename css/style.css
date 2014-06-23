@@ -19,11 +19,17 @@ header a, header a:visited {
 }
 
 #branding a {
+	font-size: 32px;
 	font-weight: bold;
+	line-height: 32px;
 }
 
 #tagline {
 	text-align: right;
+}
+
+#tagline a {
+	line-height: 32px;
 }
 
 #banner_wrap {
@@ -33,7 +39,6 @@ header a, header a:visited {
 
 #banner {
 	background: url('/images/ps.jpg') 50% 0 no-repeat;
-	background-attachment: fixed;
 	height: 660px;
 }
 
@@ -46,12 +51,12 @@ body.index #content {
 }
 
 aside ul {
-	list-style: none;
+	list-style-type: square;
 	margin-bottom: 0;
 }
 
 aside > ul {
-	padding: 15px 0 15px 15px;
+	padding: 15px 15px 15px 40px;
 	background: #F5F5F5;
 	margin-bottom: 30px;
 }
@@ -62,7 +67,7 @@ aside ul li {
 
 aside ul li ul {
 	display: none;
-	padding-left: 15px;
+	padding-left: 20px;
 	padding-top: 5px;
 }
 
@@ -73,6 +78,7 @@ aside ul li.parent_current > ul {
 
 aside ul li a {
 	text-decoration: none;
+	word-wrap: break-word;
 }
 
 aside a,
@@ -101,6 +107,10 @@ aside li a.toc-2 {
 	font-size: 20px;
 }
 
+div#page-content {
+	margin-bottom: 120px;
+}
+
 span.client, span.server, span.shared, span.type {
 	font-size: 11px;
 	line-height: 11px;
@@ -111,11 +121,11 @@ span.client, span.server, span.shared, span.type {
 }
 
 span.client {
-	background: #E7C730;
+	background: #D6C885;
 }
 
 span.server {
-	background: #00ADFF;
+	background: #70BFE4;
 }
 
 span.shared {
@@ -123,14 +133,20 @@ span.shared {
 }
 
 span.type {
-	background: #BB74BB;
+	background: #89C094;
 }
 
-p.info, p.warning {
+p.info, p.warning, p.error {
 	color: #FFF;
 	padding: 15px;
 	font-size: 18px;
 	line-height: 26px;
+}
+
+p.info i, p.warning i, p.error i {
+	font-size: 52px;
+	float: left;
+	margin: 0 15px 0 0;
 }
 
 p.info {
@@ -139,16 +155,10 @@ p.info {
 
 p.warning {
 	background: #E0B74E;
-	color: #FFF;
-	padding: 15px;
-	font-size: 18px;
-	line-height: 26px;
 }
 
-p.info i, p.warning i {
-	font-size: 52px;
-	float: left;
-	margin: 0 15px 0 0;
+p.error {
+	background: #E04E4E;
 }
 
 footer {

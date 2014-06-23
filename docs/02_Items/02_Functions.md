@@ -60,6 +60,7 @@
 
 **Required:** No  
 **Arguments:** <span class="type">Player</span> ply  
+**Returns:** <span class="type">Boolean</span>  
 **Realm:** <span class="server">Server</span>  
 **Description:** Called when the player tries to buy the item. Return true or false.
 
@@ -71,6 +72,7 @@
 
 **Required:** No  
 **Arguments:** <span class="type">Player</span> ply  
+**Returns:** <span class="type">Boolean</span>  
 **Realm:** <span class="server">Server</span>  
 **Description:** Called when the player tries to sell the item. Return true or false.
 
@@ -82,6 +84,7 @@
 
 **Required:** No  
 **Arguments:** <span class="type">Player</span> ply  
+**Returns:** <span class="type">Boolean</span>  
 **Realm:** <span class="server">Server</span>  
 **Description:** Called when the player tries to equip the item. Return true or false.
 
@@ -93,6 +96,7 @@
 
 **Required:** No  
 **Arguments:** <span class="type">Player</span> ply  
+**Returns:** <span class="type">Boolean</span>  
 **Realm:** <span class="server">Server</span>  
 **Description:** Called when the player tries to holster the item. Return true or false.
 
@@ -115,6 +119,7 @@
 
 **Required:** No  
 **Arguments:** <span class="type">Player</span> ply, <span class="type">CSModel</span> model, <span class="type">Vector</span> pos, <span class="type">Angle</span> ang   
+**Returns:** <span class="type">CSModel</span>, <span class="type">Vector</span>, <span class="type">Angle</span>   
 **Realm:** <span class="client">Client</span>  
 **Description:** Called every frame to position hats and other attachments. Requires either `ITEM.Attachment` or `ITEM.Bone`, and `ITEM.Model`.
 
