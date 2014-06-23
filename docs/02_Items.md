@@ -14,4 +14,4 @@ Creating new items is as simple as making a new lua file inside one of the categ
 
 ###<a name="clientside-models"></a>Clientside Models
 
-PointShop has a built in system for showing models attached to players and does this by default if both a `ITEM.Model` and an `ITEM.Attachment` or `ITEM.Bone` are specified.
+PointShop has a built in system for showing models attached to players and does this by default if both an `ITEM.Model` and an `ITEM.Attachment` or `ITEM.Bone` are specified.
