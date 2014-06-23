@@ -44,49 +44,65 @@ function directoryToTree($dir, $prepend = '/', $current_uri = '/')
 	
 	$tree = array();
 	
+	$files = array();
+	$directories = array();
+	
 	foreach($iterator as $file)
 	{
-		$filename = str_replace($dir, '', (string) $file);
-		
-		if($file->isDot() || $file->getFilename() == 'index.md')
+		if($file->getFilename() == '.' || $file->getFilename() == '..' || $file->getFilename() == 'index.md')
 		{
 			continue;
 		}
 		
+		$filename = str_replace($dir, '', (string) $file);
+		
 		if($file->isDir())
 		{
-			$uri = $prepend . filenameToURI($filename);
-			
-			if(!isset($tree[$uri]))
-			{
-				$tree[$uri] = array(
-					'uri' => filenameToURI($filename),
-					'full_uri' => $uri,
-					'current' => $uri == $current_uri,
-					'parent_current' => substr($current_uri, 0, strlen($uri)) == $uri,
-					'title' => filenameToTitle($filename)
-				);
-			}
-			
-			$tree[$uri]['children'] = directoryToTree($dir . '/' . $file, $uri . '/', $current_uri);
+			$directories[$filename] = (string) $file;
 		}
 		else
 		{
-			$uri = $prepend . filenameToURI($filename);
-			
-			$children = isset($tree[$uri]['children']) ? $tree[$uri]['children'] : array();
-			
+			$files[$filename] = (string) $file;
+		}
+	}
+	
+	ksort($files);
+	ksort($directories);
+	
+	foreach($files as $filename => $file)
+	{
+		$uri = $prepend . filenameToURI($filename);
+		
+		$children = isset($tree[$uri]['children']) ? $tree[$uri]['children'] : array();
+		
+		$tree[$uri] = array(
+			'file' => $dir . '/' . $file,
+			'uri' => filenameToURI($filename),
+			'full_uri' => $uri,
+			'current' => $uri == $current_uri,
+			'parent_current' => substr($current_uri, 0, strlen($uri)) == $uri,
+			'title' => filenameToTitle($filename),
+			'template' => 'page.twig',
+			'children' => $children
+		);
+	}
+	
+	foreach($directories as $directoryname => $directory)
+	{
+		$uri = $prepend . filenameToURI($directory);
+		
+		if(!isset($tree[$uri]))
+		{
 			$tree[$uri] = array(
-				'file' => $dir . '/' . $file,
-				'uri' => filenameToURI($filename),
+				'uri' => filenameToURI($directory),
 				'full_uri' => $uri,
 				'current' => $uri == $current_uri,
 				'parent_current' => substr($current_uri, 0, strlen($uri)) == $uri,
-				'title' => filenameToTitle($filename),
-				'template' => 'page.twig',
-				'children' => $children
+				'title' => filenameToTitle($directory)
 			);
 		}
+		
+		$tree[$uri]['children'] = directoryToTree($dir . '/' . $directoryname, $uri . '/', $current_uri);
 	}
 	
 	return $tree;
