@@ -1,9 +1,16 @@
 <?php
 
 /*
- * Simple router for built in php web server
- * Usage: php -S localhost:8000 router.php
+ * This file is part of http://github.com/adamdburton/pointshop-documentation
+ *
+ * (c) Adam Burton <adam@equinox-studios.co.uk>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
+
+// Simple router for built in php web server
+// Usage: php -S localhost:8000 router.php
 
 if(PHP_SAPI !== 'cli-server')
 {
