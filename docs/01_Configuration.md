@@ -1,0 +1,1 @@
+<p class="lead">There are lots of configuration options available in pointshop. The page below describes the options and what they're used for.</p>
