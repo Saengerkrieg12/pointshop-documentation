@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>{{ page.title }} | {{ config.title }}</title>
+		<title>{{ page.title }} | {{ config.meta_title }}</title>
+		
+		{% if config.meta_keywords %}
+			<meta name="keywords" content="{{ config.meta_keywords }}" />
+		{% endif %}
+		{% if config.meta_description %}
+			<meta name="keywords" content="{{ config.meta_description }}" />
+		{% endif %}
+		
+		<link type="text/plain" rel="author" href="/humans.txt" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		
 		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.2/normalize.css" />
 		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="/css/grid.css" />
 		<link rel="stylesheet" href="/css/elements.css" />
 		<link rel="stylesheet" href="/css/buttons.css" />
 		<link rel="stylesheet" href="/css/style.css" />
+		
 		<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.1/modernizr.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+		
 		{% block meta %}{% endblock %}
 	</head>
 	<body class="{{ page.uri == '/' ? 'index' : page.uri }}">
