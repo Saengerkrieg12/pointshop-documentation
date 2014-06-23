@@ -2,7 +2,7 @@
 
 ####<a name="meta-addclientsidemodel"></a>Player:PS_AddClientsideModel(ITEM, name)
 
-**Arguments:** ITEM [<span class="type">Table</span> valid ITEM], name [<span class="type">String</span> key from ClientsideModels table in ITEM]  
+**Arguments:** <span class="type">Table</span> ITEM, <span class="type">String</span> name  
 **Realm:** <span class="server">Server</span>, <span class="client">Client</span>  
 **Description:** Adds a Clientside Model to the player.
 
@@ -10,7 +10,7 @@
 
 ####<a name="meta-removeclientsidemodel"></a>Player:PS_RemoveClientsideModel(ITEM, name)
 
-**Arguments:** ITEM [<span class="type">Table</span> valid ITEM], name [<span class="type">String</span> key from ClientsideModels table in ITEM]  
+**Arguments:** <span class="type">Table</span> ITEM, <span class="type">String</span> name  
 **Realm:** <span class="server">Server</span>, <span class="client">Client</span>  
 **Description:** Removes a Clientside Model from the player.
 

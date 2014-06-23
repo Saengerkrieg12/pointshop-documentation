@@ -94,5 +94,7 @@ pre code {
 }
 
 code {
-	
+	background: #ECECEC;
+	display: inline-block;
+	padding: 0 5px;
 }

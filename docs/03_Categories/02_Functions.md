@@ -2,7 +2,7 @@
 
 ####<a name="functions-onbuy"></a>CATEGORY:CanPlayerSee(ply)
 
-**Arguments:** ply <span class="type">Player</span>  
+**Arguments:** <span class="type">Player</span> ply  
 **Realm:** <span class="shared">Shared</span>  
 **Required:** No  
 **Description:** Called when adding tabs to the menu and when buying an item.

@@ -9,7 +9,7 @@
 
 ####<a name="meta-togglemenu"></a>Player:PS_ToggleMenu(open)
 
-**Arguments:** open [<span class="type">Boolean</span>, optional]  
+**Arguments:** <span class="type">Boolean</span> open  
 **Realm:** <span class="server">Server</span>  
 **Description:** Toggles the PointShop menu for the player, or forces using the argument
 
@@ -17,7 +17,7 @@
 
 ####<a name="meta-notify"></a>Player:PS_Notify(...)
 
-**Arguments:** ... [<span class="type">Any</span>]  
+**Arguments:** <span class="type">Any</span> ...  
 **Realm:** <span class="server">Server</span>  
 **Description:** Sends a notification to the player.
 
@@ -25,14 +25,14 @@
 
 ####<a name="meta-getusergroup"></a>Player:PS_GetUsergroup()
 
-**Realm:** <span class="server">Server</span>, <span class="client">Client</span>  
+**Realm:** <span class="shared">Shared</span>  
 **Description:** Returns the players user group, with support for admin mods.
 
     local usergroup = ply:PS_GetUsergroup()
 
 ####<a name="meta-canmanagepointshop"></a>Player:PS_CanManagePointShop()
 
-**Realm:** <span class="server">Server</span>, <span class="client">Client</span>  
+**Realm:** <span class="server">Shared</span>  
 **Description:** Returns whether the player can manage PointShop.
 
     local can_manage = ply:PS_CanManagePointShop()

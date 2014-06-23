@@ -4,4 +4,8 @@
 
 ###<a name="creating-items"></a>Creating Items
 
-Creating new items is as simple as making a new file in one of
+Creating new items is as simple as making a new lua file inside one of the category folders inside the `pointshop/items` folder. The new file should then be populated with Item [Properties](/items/properties) and [Functions](/items/functions).
+
+<p class="warning"><i class="fa fa-warning"></i> Filenames of new item files must be <strong>lowercase</strong> and contain <strong>no spaces</strong>. Items with filenames containing uppercase characters or spaces will not work properly. See the default items for examples of proper item names.</p>
+
+See [the default Hats, Heads and Masks category](https://github.com/adamdburton/pointshop/blob/master/lua/items/headshatsmasks/__category.lua) for an example.
