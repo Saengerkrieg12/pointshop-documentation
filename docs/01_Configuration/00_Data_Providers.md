@@ -2,7 +2,7 @@
 
 ####<a name="pdata"></a>PData
 
-This provider uses the built in [Player.GetPData](http://wiki.garrysmod.com/page/Player/GetPData) and [Player.SetPData](http://wiki.garrysmod.com/page/Player/SetPData) functions. Data from these functions is store in the sv.db file on the server.
+This provider uses the built in [Player.GetPData](http://wiki.garrysmod.com/page/Player/GetPData) and [Player.SetPData](http://wiki.garrysmod.com/page/Player/SetPData) functions. Data from these functions is stored in the sv.db file on the server.
 
 <p class="info"><i class="fa fa-info-circle"></i> The sv.db file can be transfered between servers. This will keep all Point and Items data for players.</p>
 
