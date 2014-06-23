@@ -10,9 +10,9 @@
 
 ####<a name="get-data"></a>PROVIDER:GetData(ply, callback)
 
+**Required:** Yes  
 **Arguments:** <span class="type">Player</span> ply, <span class="type">Function</span> callback  
 **Realm:** <span class="server">Server</span>  
-**Required:** Yes  
 **Description:** Called when PointShop requests data for a player that has joined.
 
     function PROVIDER:GetData(ply, callback)
@@ -21,9 +21,9 @@
 
 ####<a name="set-data"></a>PROVIDER:SetData(ply, points, items)
 
+**Required:** Yes  
 **Arguments:** <span class="type">Player</span> ply, <span class="type">Number</span> points, <span class="type">Table</span> items  
 **Realm:** <span class="server">Server</span>  
-**Required:** Yes  
 **Description:** Called when PointShop requests that data is saved.
 
     function PROVIDER:SetData(ply, points, items)

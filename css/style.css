@@ -126,6 +126,17 @@ span.type {
 	background: #BB74BB;
 }
 
+p.info, p.warning {
+	color: #FFF;
+	padding: 15px;
+	font-size: 18px;
+	line-height: 26px;
+}
+
+p.info {
+	background: #5DA6DF;
+}
+
 p.warning {
 	background: #E0B74E;
 	color: #FFF;
@@ -134,7 +145,7 @@ p.warning {
 	line-height: 26px;
 }
 
-p.warning i {
+p.info i, p.warning i {
 	font-size: 52px;
 	float: left;
 	margin: 0 15px 0 0;
@@ -144,4 +155,17 @@ footer {
 	padding: 30px 0;
 	text-align: center;
 	color: #A0A0A0;
+}
+
+@media only screen and (max-width: 767px) {
+	
+	#branding {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	
+	#tagline {
+		text-align: center;
+	}
+	
 }

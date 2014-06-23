@@ -6,7 +6,7 @@
 **Type:** <span class="type">String</span>  
 **Description:** The items name in the shop.
 
-    ITEM.Name = "Test Item"
+    ITEM.Name = 'Test Item'
 
 ####<a name="price"></a>ITEM.Price
 
@@ -19,23 +19,23 @@
 ####<a name="model"></a>ITEM.Model
 
 **Required:** No, unless ITEM.Material is not defined  
-**Type:** <span class="type">String</span> valid model path  
-**Description:** The model shown in the shop gui. Either Model or Material is required.
+**Type:** <span class="type">String</span>  
+**Description:** The model shown in the shop gui. Either `ITEM.Model` or `ITEM.Material` is required.
 
-    ITEM.Model = "models/player/kleiner.mdl"
+    ITEM.Model = 'models/player/kleiner.mdl'
 
 ####<a name="material"></a>ITEM.Material
 
 **Required:** No, unless ITEM.Model is not defined  
-**Type:** <span class="type">String</span> valid material path  
-**Description:** The material shown in the shop gui. Either Material or Model is required.
+**Type:** <span class="type">String</span>  
+**Description:** The material shown in the shop gui. Either `ITEM.Model` or `ITEM.Material` is required.
 
-    ITEM.Material = "trails/electric.vmt"
+    ITEM.Material = 'trails/electric.vmt'
 
 ####<a name="skin"></a>ITEM.Skin
 
 **Required:** No  
-**Type:** <span class="type">Number</span> valid Skin from ITEM.Model  
+**Type:** <span class="type">Number</span>  
 **Description:** Sets the skin of the model shown in the shop gui.
 
     ITEM.Skin = 1
@@ -43,7 +43,7 @@
 ####<a name="allowed-user-groups"></a>ITEM.AllowedUserGroups
 
 **Required:** No  
-**Type:** <span class="type">Table</span> containing valid user groups  
+**Type:** <span class="type">Table</span>  
 **Description:** Defines the member groups who's members can buy this item.
 
     ITEM.AllowedUserGroups = { "admin", "vip" }
@@ -51,7 +51,7 @@
 ####<a name="single-use"></a>ITEM.SingleUse
 
 **Required:** No  
-**Type:** <span class="type">Boolean</span> true or false  
+**Type:** <span class="type">Boolean</span>  
 **Description:** Defines if the item should be given to the player but not kept. Good for weapons.
 
     ITEM.SingleUse = true
@@ -59,23 +59,23 @@
 ####<a name="attachment"></a>ITEM.Attachment
 
 **Required:** No  
-**Type:** <span class="type">String</span> valid attachment from ITEM.Model  
+**Type:** <span class="type">String</span>  
 **Description:** Attaches the clientside model to this attachment on the player if this item is added as a hat.
 
-    ITEM.Attachment = "eyes"
+    ITEM.Attachment = 'eyes'
 
 ####<a name="bone"></a>ITEM.Bone
 
 **Required:** No  
-**Type:** <span class="type">String</span> valid bone from ITEM.Model  
+**Type:** <span class="type">String</span>  
 **Description:** Attaches the clientside model to this bone on the player if this item is added as a hat.
 
-    ITEM.Bone = "ValveBiped.Bip01_Head1"
+    ITEM.Bone = 'ValveBiped.Bip01_Head1'
 
 ####<a name="nopreview"></a>ITEM.NoPreview
 
 **Required:** No  
-**Type:** <span class="type">Boolean</span> true or false  
+**Type:** <span class="type">Boolean</span>
 **Description:** Enables or disables previews for an item.
 
     ITEM.NoPreview = true

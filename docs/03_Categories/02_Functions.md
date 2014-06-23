@@ -2,9 +2,9 @@
 
 ####<a name="can-player-see"></a>CATEGORY:CanPlayerSee(ply)
 
+**Required:** No  
 **Arguments:** <span class="type">Player</span> ply  
 **Realm:** <span class="shared">Shared</span>  
-**Required:** No  
 **Description:** Called when adding tabs to the menu and when buying an item.
 
     function CATEGORY:CanPlayerSee(ply)

@@ -17,13 +17,7 @@
 
 {% block content %}
 	<div class="row">
-		<div class="eight columns push-four">
-			<div id="content">
-				<h1>{{ page.title }}</h1>
-				{{ page.content }}
-			</div>
-		</div>
-		<div class="four columns pull-eight">
+		<div class="four columns">
 			<aside>
 				<h4>Navigation</h4>
 				
@@ -39,6 +33,12 @@
 					</ul>
 				{% endif %}
 			</aside>
+		</div>
+		<div class="eight columns">
+			<div id="content">
+				<h1>{{ page.title }}</h1>
+				{{ page.content }}
+			</div>
 		</div>
 	</div>
 {% endblock %}
