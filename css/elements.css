@@ -92,6 +92,7 @@ pre code {
 	background: #E4E4E4;
 	padding: 15px;
 	line-height: inherit;
+	word-wrap: break-word;
 }
 
 code {
