@@ -18,6 +18,6 @@ This provider uses text files in the `garrysmod/data/pointshop` folder. Each pla
 
 ####<a name="mysql"></a>MySQL
 
-The MySQL provider is available as a seperate download from the [pointshop-mysql](https://github.com/adamdburton/pointshop-mysql) github repository. This provider connects to a MySQL server and supports synchonised Points and Items between servers.
+The MySQL provider is available as a separate download from the [pointshop-mysql](https://github.com/adamdburton/pointshop-mysql) github repository. This provider connects to a MySQL server and supports synchonised Points and Items between servers.
 
     PS.Config.DataProvider = 'mysql'
