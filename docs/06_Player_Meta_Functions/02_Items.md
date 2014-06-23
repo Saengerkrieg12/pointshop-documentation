@@ -2,7 +2,7 @@
 
 ####<a name="meta-giveitem"></a>Player:PS_GiveItem(item\_id)
 
-**Arguments:** item_id [string - valid item\_id]  
+**Arguments:** item_id [<span class="type">String</span> - valid item\_id]  
 **Realm:** <span class="server">Server</span>  
 **Description:** Gives an item to the player, if they don't already have one.
 
@@ -10,7 +10,7 @@
 
 ####<a name="meta-takeitem"></a>Player:PS_TakeItem(item\_id)
 
-**Arguments:** item_id [string - valid item\_id]  
+**Arguments:** item_id [<span class="type">String</span> - valid item\_id]  
 **Realm:** <span class="server">Server</span>  
 **Description:** Takes an item from the player, if they already have one.
 
@@ -18,7 +18,7 @@
 
 ####<a name="meta-buyitem"></a>Player:PS_BuyItem(item\_id)
 
-**Arguments:** item_id [string - valid item\_id]  
+**Arguments:** item_id [<span class="type">String</span> - valid item\_id]  
 **Realm:** <span class="server">Server</span>  
 **Description:** Gives the player an item and takes points, if they are allowed to and can afford to do so.
 
@@ -26,7 +26,7 @@
 
 ####<a name="meta-sellitem"></a>Player:PS_SellItem(item\_id)
 
-**Arguments:** item_id [string - valid item\_id]  
+**Arguments:** item_id [<span class="type">String</span> - valid item\_id]  
 **Realm:** <span class="server">Server</span>  
 **Description:** Takes an item from the player and gives them points, if they are allowed to and have the item.
 
@@ -34,7 +34,7 @@
 
 ####<a name="meta-equipitem"></a>Player:PS_EquipItem(item\_id)
 
-**Arguments:** item_id [string - valid item\_id]  
+**Arguments:** item_id [<span class="type">String</span> - valid item\_id]  
 **Realm:** <span class="server">Server</span>  
 **Description:** Equips an item for the player.
 
@@ -42,7 +42,7 @@
 
 ####<a name="meta-holsteritem"></a>Player:PS_HolsterItem(item\_id)
 
-**Arguments:** item_id [string - valid item\_id]  
+**Arguments:** item_id [<span class="type">String</span> - valid item\_id]  
 **Realm:** <span class="server">Server</span>  
 **Description:** Holsters an item for the player.
 
@@ -50,7 +50,7 @@
 
 ####<a name="meta-modifyitem"></a>Player:PS_ModifyItem(item\_id, modifications)
 
-**Arguments:** item_id [string - valid item\_id], modifications [table - key value pairs of modifications]  
+**Arguments:** item_id [<span class="type">String</span> - valid item\_id], modifications [<span class="type">Table</span> - key value pairs of modifications]  
 **Realm:** <span class="server">Server</span>  
 **Description:** Saves modifications for an item and calls ITEM:OnModify(ply, modifications)
 
@@ -58,24 +58,24 @@
 
 ####<a name="meta-hasitem"></a>Player:PS_HasItem(item\_id)
 
-**Arguments:** item_id [string - valid item\_id]  
-**Realm:** <span class="server">Server</span>, <span class="client">Client</span> (LocalPlayer only)  
+**Arguments:** item_id [<span class="type">String</span> - valid item\_id]  
+**Realm:** <span class="shared">Shared</span>  
 **Description:** Returns whether the player has an item.
 
     local has_item = ply:PS_HasItem('conehat')
 
 ####<a name="meta-hasitemequipped"></a>Player:PS_HasItemEquipped(item\_id)
 
-**Arguments:** item_id [string - valid item\_id]  
-**Realm:** <span class="server">Server</span>, <span class="client">Client</span> (LocalPlayer only)  
+**Arguments:** item_id [<span class="type">String</span> - valid item\_id]  
+**Realm:** <span class="shared">Shared</span>  
 **Description:** Returns whether the player has an item equipped.
 
     local has_item = ply:PS_HasItemEquipped('conehat')
 
 ####<a name="meta-numitemsequippedfromcategory"></a>Player:PS_NumItemsEquippedFromCategory(category\_id)
 
-**Arguments:** category_id [string - valid category\_id]  
-**Realm:** <span class="server">Server</span>, <span class="client">Client</span> (LocalPlayer only)  
+**Arguments:** category_id [<span class="type">String</span> - valid category\_id]  
+**Realm:** <span class="shared">Shared</span>  
 **Description:** Returns the number of items the player has equipped from a category.
 
     local has_item = ply:PS_NumItemsEquippedFromCategory('powerups')

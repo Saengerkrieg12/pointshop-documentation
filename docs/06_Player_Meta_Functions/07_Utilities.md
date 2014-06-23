@@ -9,7 +9,7 @@
 
 ####<a name="meta-togglemenu"></a>Player:PS_ToggleMenu(open)
 
-**Arguments:** open [Boolean, optional]  
+**Arguments:** open [<span class="type">Boolean</span>, optional]  
 **Realm:** <span class="server">Server</span>  
 **Description:** Toggles the PointShop menu for the player, or forces using the argument
 
@@ -17,7 +17,7 @@
 
 ####<a name="meta-notify"></a>Player:PS_Notify(...)
 
-**Arguments:** ... [any]  
+**Arguments:** ... [<span class="type">Any</span>]  
 **Realm:** <span class="server">Server</span>  
 **Description:** Sends a notification to the player.
 

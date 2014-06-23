@@ -23,7 +23,7 @@
 
 ####<a name="meta-senditem"></a>Player:PS_SendItem(item\_id)
 
-**Arguments:** item_id [string - valid item\_id]  
+**Arguments:** item_id [<span class="type">String</span> - valid item\_id]  
 **Realm:** <span class="server">Server</span>  
 **Description:** Sends the player an items data.
 

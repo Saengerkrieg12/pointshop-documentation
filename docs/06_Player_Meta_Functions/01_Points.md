@@ -2,7 +2,7 @@
 
 ####<a name="meta-givepoints"></a>Player:PS_GivePoints(points)
 
-**Arguments:** points [number]  
+**Arguments:** points [<span class="type">Number</span>]  
 **Realm:** <span class="server">Server</span>  
 **Description:** Gives points to the player.
 
@@ -10,7 +10,7 @@
 
 ####<a name="meta-takepoints"></a>Player:PS_TakePoints(points)
 
-**Arguments:** points [number]  
+**Arguments:** points [<span class="type">Number</span>]  
 **Realm:** <span class="server">Server</span>  
 **Description:** Takes points from the player.
 
@@ -18,7 +18,7 @@
 
 ####<a name="meta-takepoints"></a>Player:PS_SetPoints(points)
 
-**Arguments:** points [number]  
+**Arguments:** points [<span class="type">Number</span>]  
 **Realm:** <span class="server">Server</span>  
 **Description:** Sets the players points.
 
@@ -26,15 +26,15 @@
 
 ####<a name="meta-getpoints"></a>Player:PS_GetPoints()
 
-**Realm:** <span class="server">Server</span>, <span class="client">Client</span> (LocalPlayer only)  
+**Realm:** <span class="shared">Shared</span>  
 **Description:** Returns the amount of points the player has.
 
     local points = ply:PS_GetPoints()
 
 ####<a name="meta-getpoints"></a>Player:PS_HasPoints(points)
 
-**Arguments:** points [number]  
-**Realm:** <span class="server">Server</span>, <span class="client">Client</span> (LocalPlayer only)  
+**Arguments:** points [<span class="type">Number</span>]  
+**Realm:** <span class="shared">Shared</span>  
 **Description:** Returns whether the player has at least the amount of points.
 
     local can_afford = ply:PS_HasPoints(10)

@@ -2,7 +2,7 @@
 
 ####<a name="functions-onbuy"></a>ITEM:OnBuy(ply)
 
-**Arguments:** ply [player]  
+**Arguments:** ply <span class="type">Player</span>  
 **Realm:** <span class="server">Server</span>  
 **Required:** No  
 **Description:** Called when the player buys the item.
@@ -13,7 +13,7 @@
 
 ####<a name="functions-onsell"></a>ITEM:OnSell(ply)
 
-**Arguments:** ply [player]  
+**Arguments:** ply <span class="type">Player</span>  
 **Realm:** <span class="server">Server</span>  
 **Required:** No  
 **Description:** Called when the player sells the item.
@@ -24,7 +24,7 @@
 
 ####<a name="functions-onequip"></a>ITEM:OnEquip(ply, modifications)
 
-**Arguments:** ply [player], modifications [table]  
+**Arguments:** ply <span class="type">Player</span>, modifications <span class="type">Table</span>  
 **Realm:** <span class="server">Server</span>  
 **Required:** No  
 **Description:** Called when the player equips the item.
@@ -35,7 +35,7 @@
 
 ####<a name="functions-onholster"></a>ITEM:OnHolster(ply, modifications)
 
-**Arguments:** ply [player]  
+**Arguments:** ply <span class="type">Player</span>  
 **Realm:** <span class="server">Server</span>  
 **Required:** No  
 **Description:** Called when the player holsters the item.
@@ -46,7 +46,7 @@
 
 ####<a name="functions-onmodify"></a>ITEM:OnModify(ply)
 
-**Arguments:** ply [player]  
+**Arguments:** ply <span class="type">Player</span>  
 **Realm:** <span class="server">Server</span>  
 **Required:** No  
 **Description:** Receives the modifications table from the client. The data is saved automatically.
@@ -58,7 +58,7 @@
 
 ####<a name="functions-canplayerbuy"></a>ITEM:CanPlayerBuy(ply)
 
-**Arguments:** ply [player]  
+**Arguments:** ply <span class="type">Player</span>  
 **Realm:** <span class="server">Server</span>  
 **Required:** No  
 **Description:** Called when the player tries to buy the item. Return true or false.
@@ -69,7 +69,7 @@
 
 ####<a name="functions-canplayersell"></a>ITEM:CanPlayerSell(ply)
 
-**Arguments:** ply [player]  
+**Arguments:** ply <span class="type">Player</span>  
 **Realm:** <span class="server">Server</span>  
 **Required:** No  
 **Description:** Called when the player tries to sell the item. Return true or false.
@@ -80,7 +80,7 @@
 
 ####<a name="functions-canplayerequip"></a>ITEM:CanPlayerEquip(ply)
 
-**Arguments:** ply [player]  
+**Arguments:** ply <span class="type">Player</span>  
 **Realm:** <span class="server">Server</span>  
 **Required:** No  
 **Description:** Called when the player tries to equip the item. Return true or false.
@@ -91,7 +91,7 @@
 
 ####<a name="functions-canplayerholster"></a>ITEM:CanPlayerHolster(ply)
 
-**Arguments:** ply [player]  
+**Arguments:** ply <span class="type">Player</span>  
 **Realm:** <span class="server">Server</span>  
 **Required:** No  
 **Description:** Called when the player tries to holster the item. Return true or false.
@@ -102,10 +102,10 @@
 
 ####<a name="functions-modify"></a>ITEM:Modify(modifications)
 
-**Arguments:** modifications [table]  
+**Arguments:** modifications <span class="type">Table</span>  
 **Realm:** <span class="client">Client</span>  
 **Required:** No  
-**Description:** Called when the player tries to holster the item. Return true or false.
+**Description:** Called when the 'Modify' option is selected in the menu.
 
     function ITEM:Modify(modifications)
         PS:ShowColorChooser(self, modifications)

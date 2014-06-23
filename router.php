@@ -7,14 +7,14 @@
 
 if(PHP_SAPI !== 'cli-server')
 {
-	die('here'); // Go away
+	die('This file must be run from the command line: php -S localhost:8000 router.php'); // Go away
 }
 
 $uri = $_SERVER["REQUEST_URI"];
 
 if($uri != '/' && file_exists('.' . $uri))
 {
-  return false; // File exists, don't serve anything through php
+  return false; // File exists, don't serve through php
 }
 else 
 {

@@ -181,8 +181,12 @@ function pageTOC($html)
 	
 	for($i = 0; $i < $count; $i++)
 	{
-		$links[] = '<a href="#' . $matches[2][$i] . '" class="toc-' . $matches[1][$i] . '">' . $matches[3][$i] . '</a>';
+		$links[$matches[2][$i]] = array(
+			'uri' => $matches[2][$i],
+			'size' => $matches[1][$i],
+			'title' => $matches[3][$i]
+		);
 	}
 	
-	return '<ul><li>' . implode('</li><li>', $links) . '</li></ul>';
+	return $links;
 }

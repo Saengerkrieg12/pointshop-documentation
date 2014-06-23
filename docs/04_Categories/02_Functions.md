@@ -2,8 +2,8 @@
 
 ####<a name="functions-onbuy"></a>CATEGORY:CanPlayerSee(ply)
 
-**Arguments:** ply [player]  
-**Realm:** <span class="server">Server</span>, <span class="client">Client</span> (LocalPlayer only)  
+**Arguments:** ply <span class="type">Player</span>  
+**Realm:** <span class="shared">Shared</span>  
 **Required:** No  
 **Description:** Called when adding tabs to the menu and when buying an item.
 

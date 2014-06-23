@@ -29,9 +29,15 @@
 				
 				{{ _self.nav_tree(tree) }}
 				
-				<h4>Table of Contents</h4>
-				
-				{{ toc }}
+				{% if toc|length > 1 %}
+					<h4>Table of Contents</h4>
+					
+					<ul>
+						{% for toc_link in toc %}
+							<li><a href="#{{ toc_link.uri }}" class="toc-{{ toc_link.size }}">{{ toc_link.title }}</a></li>
+						{% endfor %}
+					</ul>
+				{% endif %}
 			</aside>
 		</div>
 	</div>
