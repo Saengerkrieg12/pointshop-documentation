@@ -1,6 +1,6 @@
 <p class="lead">Helpful clientside model-related functions.</p>
 
-####<a name="meta-addtrail"></a>Player:PS_AddTrail(ITEM, name, color)
+####<a name="add-trail"></a>Player:PS_AddTrail(ITEM, name, color)
 
 **Arguments:** <span class="type">Table</span> ITEM, <span class="type">String</span> name, <span class="type">Color</span> color  
 **Realm:** <span class="server">Server</span>  
@@ -8,7 +8,7 @@
 
     ply:PS_AddTrail(ITEM, 'test', Color(255, 0, 0, 0))
 
-####<a name="meta-removetrail"></a>Player:PS_RemoveTrail(ITEM, name)
+####<a name="remove-trail"></a>Player:PS_RemoveTrail(ITEM, name)
 
 **Arguments:** <span class="type">Table</span> ITEM, <span class="type">String</span> name  
 **Realm:** <span class="server">Server</span>  

@@ -1,6 +1,6 @@
 <p class="lead">Properties define how an item works and who it should be available to. Some are used to show the item in the menu, whilst others are used to restrict items to specific groups.</p>
 
-####<a name="properties-name"></a>ITEM.Name
+####<a name="name"></a>ITEM.Name
 
 **Required:** Yes  
 **Type:** <span class="type">String</span>  
@@ -8,7 +8,7 @@
 
     ITEM.Name = "Test Item"
 
-####<a name="properties-price"></a>ITEM.Price
+####<a name="price"></a>ITEM.Price
 
 **Required:** Yes  
 **Type:** <span class="type">Number</span>  
@@ -16,7 +16,7 @@
 
     ITEM.Price = 200
 
-####<a name="properties-model"></a>ITEM.Model
+####<a name="model"></a>ITEM.Model
 
 **Required:** No, unless ITEM.Material is not defined  
 **Type:** <span class="type">String</span> valid model path  
@@ -24,7 +24,7 @@
 
     ITEM.Model = "models/player/kleiner.mdl"
 
-####<a name="properties-material"></a>ITEM.Material
+####<a name="material"></a>ITEM.Material
 
 **Required:** No, unless ITEM.Model is not defined  
 **Type:** <span class="type">String</span> valid material path  
@@ -32,7 +32,7 @@
 
     ITEM.Material = "trails/electric.vmt"
 
-####<a name="properties-skin"></a>ITEM.Skin
+####<a name="skin"></a>ITEM.Skin
 
 **Required:** No  
 **Type:** <span class="type">Number</span> valid Skin from ITEM.Model  
@@ -40,7 +40,7 @@
 
     ITEM.Skin = 1
 
-####<a name="properties-allowed-user-groups"></a>ITEM.AllowedUserGroups
+####<a name="allowed-user-groups"></a>ITEM.AllowedUserGroups
 
 **Required:** No  
 **Type:** <span class="type">Table</span> containing valid user groups  
@@ -48,7 +48,7 @@
 
     ITEM.AllowedUserGroups = { "admin", "vip" }
 
-####<a name="properties-singleuse"></a>ITEM.SingleUse
+####<a name="single-use"></a>ITEM.SingleUse
 
 **Required:** No  
 **Type:** <span class="type">Boolean</span> true or false  
@@ -56,7 +56,7 @@
 
     ITEM.SingleUse = true
 
-####<a name="properties-attachment"></a>ITEM.Attachment
+####<a name="attachment"></a>ITEM.Attachment
 
 **Required:** No  
 **Type:** <span class="type">String</span> valid attachment from ITEM.Model  
@@ -64,7 +64,7 @@
 
     ITEM.Attachment = "eyes"
 
-####<a name="properties-bone"></a>ITEM.Bone
+####<a name="bone"></a>ITEM.Bone
 
 **Required:** No  
 **Type:** <span class="type">String</span> valid bone from ITEM.Model  
@@ -72,7 +72,7 @@
 
     ITEM.Bone = "ValveBiped.Bip01_Head1"
 
-####<a name="properties-nopreview"></a>ITEM.NoPreview
+####<a name="nopreview"></a>ITEM.NoPreview
 
 **Required:** No  
 **Type:** <span class="type">Boolean</span> true or false  

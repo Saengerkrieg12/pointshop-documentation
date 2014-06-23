@@ -1,6 +1,6 @@
 <p class="lead">Helpful clientside model-related functions.</p>
 
-####<a name="meta-addclientsidemodel"></a>Player:PS_AddClientsideModel(ITEM, name)
+####<a name="add-clientside-model"></a>Player:PS_AddClientsideModel(ITEM, name)
 
 **Arguments:** <span class="type">Table</span> ITEM, <span class="type">String</span> name  
 **Realm:** <span class="server">Server</span>, <span class="client">Client</span>  
@@ -8,7 +8,7 @@
 
     ply:PS_AddClientsideModel(ITEM, 'test')
 
-####<a name="meta-removeclientsidemodel"></a>Player:PS_RemoveClientsideModel(ITEM, name)
+####<a name="remove-clientside-model"></a>Player:PS_RemoveClientsideModel(ITEM, name)
 
 **Arguments:** <span class="type">Table</span> ITEM, <span class="type">String</span> name  
 **Realm:** <span class="server">Server</span>, <span class="client">Client</span>  

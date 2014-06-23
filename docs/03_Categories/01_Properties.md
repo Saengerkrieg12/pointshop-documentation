@@ -1,6 +1,6 @@
 <p class="lead">Properties define how a category should look and behave.</p>
 
-####<a name="properties-name"></a>CATEGORY.Name
+####<a name="name"></a>CATEGORY.Name
 
 **Required:** Yes  
 **Type:** <span class="type">String</span>  
@@ -8,7 +8,7 @@
 
     CATEGORY.Name = "Heads, Hats & Masks"
 
-####<a name="properties-icon"></a>CATEGORY.Icon
+####<a name="icon"></a>CATEGORY.Icon
 
 **Required:** Yes  
 **Type:** <span class="type">String</span> valid material part  
@@ -16,7 +16,7 @@
 
     CATEGORY.Icon = "emoticon_smile"
 
-####<a name="properties-allowequipped"></a>CATEGORY.AllowedEquipped
+####<a name="allow-equipped"></a>CATEGORY.AllowedEquipped
 
 **Required:** No, defaults to -1  
 **Type:** <span class="type">Number</span> greater or equal to -1  
@@ -24,7 +24,7 @@
 
     CATEGORY.AllowedEquipped = 2
 
-####<a name="properties-allowedusergroups"></a>CATEGORY.AllowedUserGroups
+####<a name="allowed-user-groups"></a>CATEGORY.AllowedUserGroups
 
 **Required:** No  
 **Type:** <span class="type">Table</span> containing valid user groups  

@@ -1,6 +1,6 @@
 <p class="lead">Functions are events that are called on items, with (usually) the player who owns the item being the first argument, and then event specific extra arguments.</p>
 
-####<a name="functions-onbuy"></a>CATEGORY:CanPlayerSee(ply)
+####<a name="can-player-see"></a>CATEGORY:CanPlayerSee(ply)
 
 **Arguments:** <span class="type">Player</span> ply  
 **Realm:** <span class="shared">Shared</span>  

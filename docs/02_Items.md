@@ -2,7 +2,7 @@
 
 <a href="/items/properties" class="button">Properties <i class="fa fa-chevron-right"></i></a> <a href="/items/functions" class="button">Functions <i class="fa fa-chevron-right"></i></a> <a href="/items/hooks" class="button">Hooks <i class="fa fa-chevron-right"></i></a>
 
-###<a name="creating-items"></a>Creating Items
+###<a name="creating-new-items"></a>Creating New Items
 
 Creating new items is as simple as making a new lua file inside one of the category folders inside the `pointshop/items` folder. The new file should then be populated with Item [Properties](/items/properties) and [Functions](/items/functions).
 
