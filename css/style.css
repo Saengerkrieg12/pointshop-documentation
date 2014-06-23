@@ -39,6 +39,7 @@ header a, header a:visited {
 
 #banner {
 	background: url('/images/ps.jpg') 50% 0 no-repeat;
+	background-size: cover;
 	height: 575px;
 }
 
@@ -180,4 +181,7 @@ footer {
 		text-align: center;
 	}
 	
+	#banner {
+		height: 250px;
+	}
 }
