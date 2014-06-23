@@ -1,4 +1,4 @@
-pointshop.equinox-studios.co.uk
+PointShop Documentation
 ===============================
 
 Documentation website for PointShop for Garry's Mod 13
