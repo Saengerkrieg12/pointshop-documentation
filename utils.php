@@ -64,18 +64,17 @@ function directoryToTree($dir, $prepend = '/', $current_uri = '/')
 					'full_uri' => $uri,
 					'current' => $uri == $current_uri,
 					'parent_current' => substr($current_uri, 0, strlen($uri)) == $uri,
-					'title' => filenameToTitle($filename),
-					'children' => directoryToTree($dir . '/' . $file, $uri . '/', $current_uri)
+					'title' => filenameToTitle($filename)
 				);
 			}
-			else
-			{
-				$tree[$uri]['children'] = directoryToTree($dir . '/' . $file, $uri . '/', $current_uri);
-			}
+			
+			$tree[$uri]['children'] = directoryToTree($dir . '/' . $file, $uri . '/', $current_uri);
 		}
 		else
 		{
 			$uri = $prepend . filenameToURI($filename);
+			
+			$children = isset($tree[$uri]['children']) ? $tree[$uri]['children'] : array();
 			
 			$tree[$uri] = array(
 				'file' => $dir . '/' . $file,
@@ -85,7 +84,7 @@ function directoryToTree($dir, $prepend = '/', $current_uri = '/')
 				'parent_current' => substr($current_uri, 0, strlen($uri)) == $uri,
 				'title' => filenameToTitle($filename),
 				'template' => 'page.twig',
-				'children' => array()
+				'children' => $children
 			);
 		}
 	}
