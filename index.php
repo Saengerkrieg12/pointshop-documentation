@@ -9,10 +9,15 @@
  * file that was distributed with this source code.
  */
 
+if(!file_exists('./vendor/autoload.php'))
+{
+	die('Run composer install!');
+}
+
 DEFINE('PS_DOCS', true);
 
-require 'vendor/autoload.php';
-require 'utils.php';
+require './vendor/autoload.php';
+require './utils.php';
 
 date_default_timezone_set('Europe/London');
 
