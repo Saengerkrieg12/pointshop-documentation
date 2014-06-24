@@ -7,6 +7,11 @@
  * file that was distributed with this source code.
  */
 
+function recordEvent(category, action, label)
+{
+  _gat._getTrackerByName()._trackEvent(category, action, label);
+}
+
 $(function()
 {
 	var $window = $(window);
