@@ -51,6 +51,11 @@ body.index #content {
 	text-align: center;
 }
 
+body.index .a2a_kit {
+	margin: 0 auto;
+	width: 150px;
+}
+
 aside ul {
 	list-style-type: square;
 	margin-bottom: 0;
