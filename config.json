@@ -8,5 +8,6 @@
 	"tagline": "The most popular shop system for Garry's Mod",
 	"docs_path": "./docs/",
 	"analytics_code": "UA-23198406-13",
-	"disqus_shortname": "pointshopdocs"
+	"disqus_shortname": "pointshopdocs",
+	"share_buttons": true
 }
