@@ -9,7 +9,7 @@
 
 function recordEvent(category, action, label)
 {
-  _gat._getTrackerByName()._trackEvent(category, action, label);
+	ga('send', label, category, action);
 }
 
 $(function()
