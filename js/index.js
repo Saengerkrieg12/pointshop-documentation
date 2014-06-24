@@ -9,7 +9,7 @@
 
 function recordEvent(category, action, label)
 {
-	ga('send', label, category, action);
+	ga('send', 'event', category, action, label);
 }
 
 $(function()
