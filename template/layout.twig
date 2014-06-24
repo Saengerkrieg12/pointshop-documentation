@@ -32,7 +32,7 @@
 		
 		{% block meta %}{% endblock %}
 	</head>
-	<body class="{{ page.uri == '/' ? 'index' : page.uri }}">
+	<body class="{{ page.uri == '/' ? 'index' : page.uri }}"  itemscope="" itemtype="http://schema.org/WebPage">
 		{% if config.analytics_code and config.domain %}
 			<script>
 				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
