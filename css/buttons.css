@@ -12,6 +12,7 @@ a.button, a.button:visited {
 	display: inline-block;
 	border: 0;
 	font-size: 18px;
+	font-weight: bold;
 	line-height: 18px;
 	text-transform: uppercase;
 	background: #C94747;
