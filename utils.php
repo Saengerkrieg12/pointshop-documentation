@@ -27,7 +27,7 @@ function buildTree($current_uri = '/')
 			'file' => $dir . 'index.md',
 			'uri' => $uri,
 			'full_uri' => $uri,
-			'parent_current' => substr($current_uri, 0, strlen($uri)) == $uri,
+			'parent_current' => false,
 			'current' => $current_uri == $uri,
 			'title' => $config['index_title'],
 			'template' => 'index.twig',
