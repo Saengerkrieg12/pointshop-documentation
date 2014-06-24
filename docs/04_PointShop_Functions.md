@@ -69,4 +69,3 @@
         modifications.color = color
         self:SendModifications(item.ID, modifications)
     end
-

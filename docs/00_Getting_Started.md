@@ -13,6 +13,6 @@ PointShop is not currently available on the Steam Workshop because of the dynami
 
 See the [configuration](/configuration) page for more information on each configuration option.
 
-###<a name="customize"></a>Customize
+###<a name="customization"></a>Customization
 
 To create new items and categories for PointShop, see the [items](/items) and [categories](/categories) pages.
