@@ -38,6 +38,13 @@
 			<div id="content">
 				<div id="page-content">
 					<h1 itemprop="name">{{ page.title }}</h1>
+					<div id="breadcrumb" itemprop="breadcrumb">
+						{% if breadcrumb|length > 1 %}
+							{% for breadcrumb_page in breadcrumb %}
+								{% if not loop.last %}<a href="{{ breadcrumb_page.full_uri }}">{% endif %}{{ breadcrumb_page.title }}{% if not loop.last %}</a> &raquo; {% endif %}
+							{% endfor %}
+						{% endif %}
+					</div>
 					<div itemprop="description">
 						{{ page.content }}
 					</div>

@@ -20,12 +20,15 @@ function buildTree($current_uri = '/')
 	
 	$dir = $config['docs_path'];
 	
+	$uri = '/';
+	
 	$tree = array(
 		'/' => array(
 			'file' => $dir . 'index.md',
-			'uri' => '/',
-			'full_uri' => '/',
-			'current' => $current_uri == '/',
+			'uri' => $uri,
+			'full_uri' => $uri,
+			'parent_current' => substr($current_uri, 0, strlen($uri)) == $uri,
+			'current' => $current_uri == $uri,
 			'title' => $config['index_title'],
 			'template' => 'index.twig',
 			'children' => array()
@@ -188,9 +191,13 @@ function renderPage($page, $uri)
 	$engine = new Parsedown();
 	$page['content'] = $engine->text($page['content']);
 	
+	$toc = pageTOC($page['content']);
+	$breadcrumb = pageBreadcrumb($tree);
+	
 	echo $twig->render($page['template'], array(
 		'page' => $page,
-		'toc' => pageTOC($page['content']),
+		'toc' => $toc,
+		'breadcrumb' => $breadcrumb,
 		'config' => $config,
 		'tree' => $tree,
 		'uri' => $uri
@@ -210,6 +217,28 @@ function pageTOC($html)
 			'size' => $matches[1][$i],
 			'title' => $matches[3][$i]
 		);
+	}
+	
+	return $links;
+}
+
+function pageBreadcrumb($tree)
+{
+	$links = array();
+	
+	foreach($tree as $tree_page)
+	{
+		if($tree_page['parent_current'] && !$tree_page['current'])
+		{
+			$links[$tree_page['full_uri']] = $tree_page;
+			
+			$links += pageBreadcrumb($tree_page['children']);
+		}
+		
+		if($tree_page['current'])
+		{
+			$links[$tree_page['full_uri']] = $tree_page;
+		}
 	}
 	
 	return $links;
