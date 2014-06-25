@@ -170,7 +170,7 @@ function preparePage($page = null)
 		
 		$page = array(
 			'title' => '404: Not Found',
-			'content' => 'Sorry, the page you requested was not found. Use the navigation on left.',
+			'content' => 'Sorry, the page you requested was not found. Perhaps what you were looking for for is in the navigation.',
 			'template' => 'page.twig'
 		);
 	}
