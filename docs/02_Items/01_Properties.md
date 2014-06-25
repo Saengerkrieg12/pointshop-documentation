@@ -75,7 +75,7 @@
 ####<a name="no-preview"></a>ITEM.NoPreview
 
 **Required:** No  
-**Type:** <span class="type">Boolean</span>
+**Type:** <span class="type">Boolean</span>  
 **Description:** Enables or disables previews for the item.
 
     ITEM.NoPreview = true
@@ -83,16 +83,15 @@
 ####<a name="admin-only"></a>ITEM.AdminOnly
 
 **Required:** No  
-**Type:** <span class="type">Boolean</span>
+**Type:** <span class="type">Boolean</span>  
 **Description:** Sets whether the item should only be purchasable by admins.
 
     ITEM.AdminOnly = true
 
-####<a name="admin-only"></a>ITEM.Except
+####<a name="except"></a>ITEM.Except
 
 **Required:** No  
-**Type:** <span class="type">Boolean</span>
+**Type:** <span class="type">Boolean</span>  
 **Description:** Sets whether the item can be purchased when the player is dead/in spectator mode.
 
     ITEM.Except = true
- 
