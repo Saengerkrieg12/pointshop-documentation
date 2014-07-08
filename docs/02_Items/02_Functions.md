@@ -1,6 +1,6 @@
 <p class="lead">Functions are events that are called on items, with (usually) the player who owns the item being the first argument, and then event specific extra arguments.</p>
 
-####<a name="onbuy"></a>ITEM:OnBuy(ply)
+####<a href="#onbuy" name="onbuy">ITEM:OnBuy(ply)</a>
 
 **Required:** No  
 **Arguments:** <span class="type">Player</span> ply  
@@ -11,7 +11,7 @@
         ply:Kill()
     end
 
-####<a name="onsell"></a>ITEM:OnSell(ply)
+####<a href="#onsell" name="onsell">ITEM:OnSell(ply)</a>
 
 **Required:** No  
 **Arguments:** <span class="type">Player</span> ply  
@@ -22,7 +22,7 @@
         ply:Kill()
     end
 
-####<a name="on-equip"></a>ITEM:OnEquip(ply, modifications)
+####<a href="#on-equip" name="on-equip">ITEM:OnEquip(ply, modifications)</a>
 
 **Required:** No  
 **Arguments:** <span class="type">Player</span> ply, <span class="type">Table</span> modifications  
@@ -33,7 +33,7 @@
         PrintTable(modifications)
     end
 
-####<a name="on-holster"></a>ITEM:OnHolster(ply, modifications)
+####<a href="#on-holster" name="on-holster">ITEM:OnHolster(ply, modifications)</a>
 
 **Required:** No  
 **Arguments:** <span class="type">Player</span> ply  
@@ -44,7 +44,7 @@
         ply:Kill()
     end
 
-####<a name="on-modify"></a>ITEM:OnModify(ply)
+####<a href="#on-modify" name="on-modify">ITEM:OnModify(ply)</a>
 
 **Required:** No  
 **Arguments:** <span class="type">Player</span> ply  
@@ -56,7 +56,7 @@
     	self:OnEquip(ply, modifications) -- adds the item back again
     end
 
-####<a name="can-player-buy"></a>ITEM:CanPlayerBuy(ply)
+####<a href="#can-player-buy" name="can-player-buy">ITEM:CanPlayerBuy(ply)</a>
 
 **Required:** No  
 **Arguments:** <span class="type">Player</span> ply  
@@ -68,7 +68,7 @@
         return ply:Alive() -- only if alive
     end
 
-####<a name="can-player-sell"></a>ITEM:CanPlayerSell(ply)
+####<a href="#can-player-sell" name="can-player-sell">ITEM:CanPlayerSell(ply)</a>
 
 **Required:** No  
 **Arguments:** <span class="type">Player</span> ply  
@@ -80,7 +80,7 @@
         return ply:Alive() -- only if alive
     end
 
-####<a name="can-player-equip"></a>ITEM:CanPlayerEquip(ply)
+####<a href="#can-player-equip" name="can-player-equip">ITEM:CanPlayerEquip(ply)</a>
 
 **Required:** No  
 **Arguments:** <span class="type">Player</span> ply  
@@ -92,7 +92,7 @@
         return ply:Alive() -- only if alive
     end
 
-####<a name="can-player-holster"></a>ITEM:CanPlayerHolster(ply)
+####<a href="#can-player-holster" name="can-player-holster">ITEM:CanPlayerHolster(ply)</a>
 
 **Required:** No  
 **Arguments:** <span class="type">Player</span> ply  
@@ -104,7 +104,7 @@
         return ply:Alive() -- only if alive
     end
 
-####<a name="modify"></a>ITEM:Modify(modifications)
+####<a href="#modify" name="modify">ITEM:Modify(modifications)</a>
 
 **Required:** No  
 **Arguments:** <span class="type">Table</span> modifications  
@@ -115,7 +115,7 @@
         PS:ShowColorChooser(self, modifications)
     end
 
-####<a name="modify-clientside-model"></a>ITEM:ModifyClientsideModel(ply, model, pos, ang)
+####<a href="#modify-clientside-model" name="modify-clientside-model">ITEM:ModifyClientsideModel(ply, model, pos, ang)</a>
 
 **Required:** No  
 **Arguments:** <span class="type">Player</span> ply, <span class="type">CSModel</span> model, <span class="type">Vector</span> pos, <span class="type">Angle</span> ang   

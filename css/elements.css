@@ -23,6 +23,12 @@ h1, h2, h3, h4, h5, h6 {
 	word-wrap: break-word;
 }
 
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+	text-decoration: none;
+	color: #5A5A5A;
+}
+
 h1 {
 	font-size: 46px;
 	line-height: 50px;

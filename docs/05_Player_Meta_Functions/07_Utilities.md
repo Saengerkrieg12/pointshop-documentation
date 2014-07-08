@@ -1,20 +1,20 @@
 <p class="lead">Helpful utility functions that don't fit any other section.</p>
 
-####<a name="can-perform-action"></a>Player:PS_CanPerformAction()
+####<a href="#can-perform-action" name="can-perform-action">Player:PS_CanPerformAction()</a>
 
 **Realm:** <span class="server">Server</span>  
 **Description:** Determines if the player should be able to perform PointShop actions.
 
     local can_buy_item = ply:PS_CanPerformAction()
 
-####<a name="toggle-menu"></a>Player:PS_ToggleMenu()
+####<a href="#toggle-menu" name="toggle-menu">Player:PS_ToggleMenu()</a>
 
 **Realm:** <span class="server">Server</span>  
 **Description:** Toggles the PointShop menu for the player.
 
     ply:PS_ToggleMenu()
 
-####<a name="notify"></a>Player:PS_Notify(...)
+####<a href="#notify" name="notify">Player:PS_Notify(...)</a>
 
 **Arguments:** <span class="type">Any</span> ...  
 **Realm:** <span class="server">Server</span>  
@@ -22,7 +22,7 @@
 
     ply:PS_Notify('You have been give', 10, 'points for playing on the server!')
 
-####<a name="get-user-group"></a>Player:PS_GetUsergroup()
+####<a href="#get-user-group" name="get-user-group">Player:PS_GetUsergroup()</a>
 
 **Realm:** <span class="shared">Shared</span>  
 **Description:** Returns the players user group, with support for admin mods.

@@ -1,6 +1,6 @@
 <p class="lead">Functions are events that are called on items, with (usually) the player who owns the item being the first argument, and then event specific extra arguments.</p>
 
-####<a name="can-player-see"></a>CATEGORY:CanPlayerSee(ply)
+####<a href="#can-player-see" name="can-player-see">CATEGORY:CanPlayerSee(ply)</a>
 
 **Required:** No  
 **Arguments:** <span class="type">Player</span> ply  
@@ -11,7 +11,7 @@
         return ply:IsAdmin() -- Only admins
     end
 
-####<a name="modify-tab"></a>CATEGORY:ModifyTab(tab)
+####<a href="#modify-tab" name="modify-tab">CATEGORY:ModifyTab(tab)</a>
 
 **Required:** No  
 **Arguments:** <span class="type">DPanel</span> tab  

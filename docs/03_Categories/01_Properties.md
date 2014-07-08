@@ -1,6 +1,6 @@
 <p class="lead">Properties define how a category should look and behave.</p>
 
-####<a name="name"></a>CATEGORY.Name
+####<a href="#name" name="name">CATEGORY.Name</a>
 
 **Required:** Yes  
 **Type:** <span class="type">String</span>  
@@ -8,7 +8,7 @@
 
     CATEGORY.Name = 'Heads, Hats & Masks'
 
-####<a name="icon"></a>CATEGORY.Icon
+####<a href="#icon" name="icon">CATEGORY.Icon</a>
 
 **Required:** Yes  
 **Type:** <span class="type">String</span>  
@@ -16,7 +16,7 @@
 
     CATEGORY.Icon = 'emoticon_smile'
 
-####<a name="allow-equipped"></a>CATEGORY.AllowedEquipped
+####<a href="#allow-equipped" name="allow-equipped">CATEGORY.AllowedEquipped</a>
 
 **Required:** No, defaults to -1  
 **Type:** <span class="type">Number</span>  
@@ -24,7 +24,7 @@
 
     CATEGORY.AllowedEquipped = 2
 
-####<a name="allowed-user-groups"></a>CATEGORY.AllowedUserGroups
+####<a href="#allowed-user-groups" name="allowed-user-groups">CATEGORY.AllowedUserGroups</a>
 
 **Required:** No  
 **Type:** <span class="type">Table</span>  
@@ -32,7 +32,7 @@
 
     CATEGORY.AllowedUserGroups = { "admin", "vip" }
 
-####<a name="order"></a>CATEGORY.Order
+####<a href="#order" name="order">CATEGORY.Order</a>
 
 **Required:** No  
 **Type:** <span class="type">Number</span>  

@@ -208,14 +208,14 @@ function pageTOC($html)
 {
 	$links = array();
 	
-	$count = preg_match_all('/<h([2-4])><a name="(.*?)"><\/a>(.*?)<\/h[2-4]>/is', $html, $matches);
+	$count = preg_match_all('/<h([2-4])><a href="(.*?)" name="(.*?)">(.*?)<\/a><\/h[2-4]>/is', $html, $matches);
 	
 	for($i = 0; $i < $count; $i++)
 	{
-		$links[$matches[2][$i]] = array(
-			'uri' => $matches[2][$i],
+		$links[$matches[3][$i]] = array(
+			'uri' => $matches[3][$i],
 			'size' => $matches[1][$i],
-			'title' => $matches[3][$i]
+			'title' => $matches[4][$i]
 		);
 	}
 	

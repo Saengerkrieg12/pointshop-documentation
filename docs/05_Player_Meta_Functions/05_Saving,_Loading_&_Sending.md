@@ -1,27 +1,27 @@
 <p class="lead">These functions are used internally to load, save, and send data.</p>
 
-####<a name="save"></a>Player:PS_Save()
+####<a href="#save" name="save">Player:PS_Save()</a>
 
 **Realm:** <span class="server">Server</span>  
 **Description:** Saves the players points and items.
 
     ply:PS_Save()
 
-####<a name="load-data"></a>Player:PS_LoadData()
+####<a href="#load-data" name="load-data">Player:PS_LoadData()</a>
 
 **Realm:** <span class="server">Server</span>  
 **Description:** Loads the players points and items from the database.
 
     ply:PS_LoadData()
 
-####<a name="send-points"></a>Player:PS_SendPoints()
+####<a href="#send-points" name="send-points">Player:PS_SendPoints()</a>
 
 **Realm:** <span class="server">Server</span>  
 **Description:** Sends the player their points data.
 
     ply:PS_SendPoints()
 
-####<a name="send-item"></a>Player:PS_SendItem(item\_id)
+####<a href="#send-item" name="send-item">Player:PS_SendItem(item\_id)</a>
 
 **Arguments:** <span class="type">String</span> item_id  
 **Realm:** <span class="server">Server</span>  
@@ -29,14 +29,14 @@
 
     ply:PS_SendItem('conehat')
 
-####<a name="send-items"></a>Player:PS_SendItems()
+####<a href="#send-items" name="send-items">Player:PS_SendItems()</a>
 
 **Realm:** <span class="server">Server</span>  
 **Description:** Sends the player their items data.
 
     ply:PS_SendItems()
 
-####<a name="send-clientside-models"></a>Player:PS_SendClientsideModels()
+####<a href="#send-clientside-models" name="send-clientside-models">Player:PS_SendClientsideModels()</a>
 
 **Realm:** <span class="server">Server</span>  
 **Description:** Sends the player clientside model data.

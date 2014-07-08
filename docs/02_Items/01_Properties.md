@@ -1,6 +1,6 @@
 <p class="lead">Properties define how an item works and who it should be available to. Some are used to show the item in the menu, whilst others are used to restrict items to specific groups.</p>
 
-####<a name="name"></a>ITEM.Name
+####<a href="#name" name="name">ITEM.Name</a>
 
 **Required:** Yes  
 **Type:** <span class="type">String</span>  
@@ -8,7 +8,7 @@
 
     ITEM.Name = 'Test Item'
 
-####<a name="price"></a>ITEM.Price
+####<a href="#price" name="price">ITEM.Price</a>
 
 **Required:** Yes  
 **Type:** <span class="type">Number</span>  
@@ -16,7 +16,7 @@
 
     ITEM.Price = 200
 
-####<a name="model"></a>ITEM.Model
+####<a href="#model" name="model">ITEM.Model</a>
 
 **Required:** No, unless ITEM.Material is not defined  
 **Type:** <span class="type">String</span>  
@@ -24,7 +24,7 @@
 
     ITEM.Model = 'models/player/kleiner.mdl'
 
-####<a name="material"></a>ITEM.Material
+####<a href="#material" name="material">ITEM.Material</a>
 
 **Required:** No, unless ITEM.Model is not defined  
 **Type:** <span class="type">String</span>  
@@ -32,7 +32,7 @@
 
     ITEM.Material = 'trails/electric.vmt'
 
-####<a name="skin"></a>ITEM.Skin
+####<a href="#skin" name="skin">ITEM.Skin</a>
 
 **Required:** No  
 **Type:** <span class="type">Number</span>  
@@ -40,7 +40,7 @@
 
     ITEM.Skin = 1
 
-####<a name="allowed-user-groups"></a>ITEM.AllowedUserGroups
+####<a href="#allowed-user-groups" name="allowed-user-groups">ITEM.AllowedUserGroups</a>
 
 **Required:** No  
 **Type:** <span class="type">Table</span>  
@@ -48,7 +48,7 @@
 
     ITEM.AllowedUserGroups = { "admin", "vip" }
 
-####<a name="single-use"></a>ITEM.SingleUse
+####<a href="#single-use" name="single-use">ITEM.SingleUse</a>
 
 **Required:** No  
 **Type:** <span class="type">Boolean</span>  
@@ -56,7 +56,7 @@
 
     ITEM.SingleUse = true
 
-####<a name="attachment"></a>ITEM.Attachment
+####<a href="#attachment" name="attachment">ITEM.Attachment</a>
 
 **Required:** No  
 **Type:** <span class="type">String</span>  
@@ -64,7 +64,7 @@
 
     ITEM.Attachment = 'eyes'
 
-####<a name="bone"></a>ITEM.Bone
+####<a href="#bone" name="bone">ITEM.Bone</a>
 
 **Required:** No  
 **Type:** <span class="type">String</span>  
@@ -72,7 +72,7 @@
 
     ITEM.Bone = 'ValveBiped.Bip01_Head1'
 
-####<a name="no-preview"></a>ITEM.NoPreview
+####<a href="#no-preview" name="no-preview">ITEM.NoPreview</a>
 
 **Required:** No  
 **Type:** <span class="type">Boolean</span>  
@@ -80,7 +80,7 @@
 
     ITEM.NoPreview = true
 
-####<a name="admin-only"></a>ITEM.AdminOnly
+####<a href="#admin-only" name="admin-only">ITEM.AdminOnly</a>
 
 **Required:** No  
 **Type:** <span class="type">Boolean</span>  
@@ -88,7 +88,7 @@
 
     ITEM.AdminOnly = true
 
-####<a name="except"></a>ITEM.Except
+####<a href="#except" name="except">ITEM.Except</a>
 
 **Required:** No  
 **Type:** <span class="type">Boolean</span>  

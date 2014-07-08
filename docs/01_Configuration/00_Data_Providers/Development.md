@@ -1,6 +1,6 @@
 <p class="lead">You can develop your own Data Provider if the default ones do not match your requirements. You could create a provider that interacts with a web service, for example.</p>
 
-####<a name="fallback"></a>PROVIDER.Fallback
+####<a href="#fallback" name="fallback">PROVIDER.Fallback</a>
 
 **Required:** Yes  
 **Type:** <span class="type">String</span>  
@@ -8,7 +8,7 @@
 
     PROVIDER.Fallback = 'pdata'
 
-####<a name="get-data"></a>PROVIDER:GetData(ply, callback)
+####<a href="#get-data" name="get-data">PROVIDER:GetData(ply, callback)</a>
 
 **Required:** Yes  
 **Arguments:** <span class="type">Player</span> ply, <span class="type">Function</span> callback  
@@ -19,7 +19,7 @@
         callback(10, {}) -- returns 10 points and no items
     end
 
-####<a name="set-data"></a>PROVIDER:SetData(ply, points, items)
+####<a href="#set-data" name="set-data">PROVIDER:SetData(ply, points, items)</a>
 
 **Required:** Yes  
 **Arguments:** <span class="type">Player</span> ply, <span class="type">Number</span> points, <span class="type">Table</span> items  

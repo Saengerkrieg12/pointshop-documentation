@@ -1,6 +1,6 @@
 <p class="lead">These functions can be called at any time and are used for the base functionality in PointShop.</p>
 
-####<a name="giveitem"></a>Player:PS_GiveItem(item\_id)
+####<a href="#give-item" name="give-item">Player:PS_GiveItem(item\_id)</a>
 
 **Arguments:** <span class="type">String</span> item_id  
 **Realm:** <span class="server">Server</span>  
@@ -8,7 +8,7 @@
 
     ply:PS_GiveItem('conehat')
 
-####<a name="takeitem"></a>Player:PS_TakeItem(item\_id)
+####<a href="#take-item" name="take-item">Player:PS_TakeItem(item\_id)</a>
 
 **Arguments:** <span class="type">String</span> item_id  
 **Realm:** <span class="server">Server</span>  
@@ -16,7 +16,7 @@
 
     ply:PS_TakeItem('conehat')
 
-####<a name="buyitem"></a>Player:PS_BuyItem(item\_id)
+####<a href="#buy-item" name="buy-item">Player:PS_BuyItem(item\_id)</a>
 
 **Arguments:** <span class="type">String</span> item_id  
 **Realm:** <span class="server">Server</span>  
@@ -24,7 +24,7 @@
 
     ply:PS_BuyItem('conehat')
 
-####<a name="sell-item"></a>Player:PS_SellItem(item\_id)
+####<a href="#sell-item" name="sell-item">Player:PS_SellItem(item\_id)</a>
 
 **Arguments:** <span class="type">String</span> item_id  
 **Realm:** <span class="server">Server</span>  
@@ -32,7 +32,7 @@
 
     ply:PS_SellItem('conehat')
 
-####<a name="equip-item"></a>Player:PS_EquipItem(item\_id)
+####<a href="#equip-item" name="equip-item">Player:PS_EquipItem(item\_id)</a>
 
 **Arguments:** <span class="type">String</span> item_id  
 **Realm:** <span class="server">Server</span>  
@@ -40,7 +40,7 @@
 
     ply:PS_EquipItem('conehat')
 
-####<a name="holster-item"></a>Player:PS_HolsterItem(item\_id)
+####<a href="#holster-item" name="holster-item">Player:PS_HolsterItem(item\_id)</a>
 
 **Arguments:** <span class="type">String</span> item_id  
 **Realm:** <span class="server">Server</span>  
@@ -48,7 +48,7 @@
 
     ply:PS_HolsterItem('conehat')
 
-####<a name="modify-item"></a>Player:PS_ModifyItem(item\_id, modifications)
+####<a href="#modify-item" name="modify-item">Player:PS_ModifyItem(item\_id, modifications)</a>
 
 **Arguments:** <span class="type">String</span> item_id, <span class="type">Table</span> modifications  
 **Realm:** <span class="server">Server</span>  
@@ -56,7 +56,7 @@
 
     ply:PS_ModifyItem('conehat', { color = Color(255, 0, 0, 0) })
 
-####<a name="has-item"></a>Player:PS_HasItem(item\_id)
+####<a href="#has-item" name="has-item">Player:PS_HasItem(item\_id)</a>
 
 **Arguments:** <span class="type">String</span> item_id  
 **Realm:** <span class="shared">Shared</span>  
@@ -64,7 +64,7 @@
 
     local has_item = ply:PS_HasItem('conehat')
 
-####<a name="has-item-equipped"></a>Player:PS_HasItemEquipped(item\_id)
+####<a href="#has-item-equipped" name="has-item-equipped">Player:PS_HasItemEquipped(item\_id)</a>
 
 **Arguments:** <span class="type">String</span> item_id  
 **Realm:** <span class="shared">Shared</span>  
@@ -72,7 +72,7 @@
 
     local has_item = ply:PS_HasItemEquipped('conehat')
 
-####<a name="num-items-equipped-from-category"></a>Player:PS_NumItemsEquippedFromCategory(category\_id)
+####<a href="#num-items-equipped-from-category" name="num-items-equipped-from-category">Player:PS_NumItemsEquippedFromCategory(category\_id)</a>
 
 **Arguments:** <span class="type">String</span> category_id  
 **Realm:** <span class="shared">Shared</span>  
