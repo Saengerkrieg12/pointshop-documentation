@@ -20,8 +20,9 @@ $(function()
 	$window.scroll(function()
 	{
 		var scrollTop = $window.scrollTop();
-		var percentage = scrollTop / $window.innerHeight();
+		$overlay.css({ backgroundPosition: '50% ' + -(scrollTop / 2) + 'px' });
 		
-		$overlay.css('opacity', 1 - percentage);
+		//var percentage = scrollTop / $window.innerHeight();
+		//$overlay.css('opacity', 1 - percentage);
 	});
 });
